@@ -33,12 +33,21 @@
     "api-interfaces": {
       "tags": []
     },
+    "core-data": {
+      "tags": []
+    },
+    "core-state": {
+      "tags": []
+    },
     "dashboard": {
       "tags": []
     },
     "dashboard-e2e": {
       "tags": [],
       "implicitDependencies": ["dashboard"]
+    },
+    "material": {
+      "tags": []
     }
   }
 }
