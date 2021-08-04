@@ -1,8 +1,10 @@
 # Hello React
 
-This is the sample project for learning React.
+![Hello React](apps/dashboard/src/assets/images/screenshot.png)
 
-The sample project includes React web application and a mock RESTful API within an Nx workspace by NRWL. 
+This is sample project for learning React.
+
+The sample project includes a React web application with a mock RESTful API within an Nx workspace by NRWL. 
 
 The React application uses `redux-toolkit` and `axios` libs to manage state and handle server communication. The React application also uses `material-ui` for React components and layout.
 
