@@ -1,12 +1,38 @@
+# Hello React
 
+This is the sample project for learning React.
 
-# HelloPresolved
+The sample project includes React web application and a mock RESTful API within an Nx workspace by NRWL. 
 
-This project was generated using [Nx](https://nx.dev).
+The React application uses `redux-toolkit` and `axios` libs to manage state and handle server communication. The React application also uses `material-ui` for React components and layout.
 
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
+## Prerequisites
+- [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+- Node.js and NPM – we recommend using [NVM (Linux/Mac)](https://github.com/creationix/nvm) or [NVM-Windows (Windows)](https://github.com/coreybutler/nvm-windows)
 
-🔎 **Smart, Extensible Build Framework**
+## Web: Getting Started
+
+```
+git clone https://github.com/simpulton/hello-react
+cd hello-react
+npm i
+npm run serve:all
+```
+
+The `serve:all` command is a convenience methods that runs the `serve:api` and `serve:web` commands concurrently. You can run each command separately if you need to.
+
+```
+"serve:api": "nx run api:serve",
+"serve:web": "nx serve --open",
+"serve:all": "concurrently \"npm run serve:api\" \"npm run serve:web\""
+```
+
+The web application will open to [http://localhost:4200](http://localhost:4200) in your browser.
+
+You can see the API by navigating to [http://localhost:3333/api/](http://localhost:3333/api/) in your browser.
+
+> Note: the above terminal commands are for Mac. Remember to substitute the appropriate commands for your OS.
+
 
 ## Adding capabilities to your workspace
 
@@ -80,15 +106,3 @@ Run `nx dep-graph` to see a diagram of the dependencies of your projects.
 Visit the [Nx Documentation](https://nx.dev) to learn more.
 
 
-
-## ☁ Nx Cloud
-
-### Distributed Computation Caching & Distributed Task Execution
-
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-cloud-card.png"></p>
-
-Nx Cloud pairs with Nx in order to enable you to build and test code more rapidly, by up to 10 times. Even teams that are new to Nx can connect to Nx Cloud and start saving time instantly.
-
-Teams using Nx gain the advantage of building full-stack applications with their preferred framework alongside Nx’s advanced code generation and project dependency graph, plus a unified experience for both frontend and backend developers.
-
-Visit [Nx Cloud](https://nx.app/) to learn more.
